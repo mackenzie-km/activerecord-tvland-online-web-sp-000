@@ -3,6 +3,6 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def build_network(args)
-    Network.create(args)
+    Network.find_or_create_by(args)
   end
 end
