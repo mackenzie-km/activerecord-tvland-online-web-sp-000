@@ -1,7 +1,7 @@
 class Character < ActiveRecord::Base
   belongs_to :actor
-  belongs_to :shows
-  has_many :network, through: :shows
+  belongs_to :show
+  has_many :networks, through: :shows
 
   def say_that_thing_you_say
     "#{self.name} always says: #{self.catchphrase}"
