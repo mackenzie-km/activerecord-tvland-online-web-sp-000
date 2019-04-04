@@ -8,6 +8,6 @@ class Character < ActiveRecord::Base
   end
 
   def build_network(args)
-    self.build_show(args)
+    Network.new(args)
   end
 end
