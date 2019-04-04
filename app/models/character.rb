@@ -8,7 +8,6 @@ class Character < ActiveRecord::Base
   end
 
   def build_network(args)
-    binding.pry
     Network.new(args)
   end
 end
